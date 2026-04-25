@@ -1,6 +1,9 @@
 # Cursor IDE config and skills
 .cursor/
 
+#Obsidian vault
+.obsidian/
+
 # Slides builder — local build toolchain, not shipped with the site
 slides-builder/
 
