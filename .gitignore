@@ -1,0 +1,9 @@
+# Cursor IDE config and skills
+.cursor/
+
+# Slides builder — local build toolchain, not shipped with the site
+slides-builder/
+
+# OS
+.DS_Store
+Thumbs.db
