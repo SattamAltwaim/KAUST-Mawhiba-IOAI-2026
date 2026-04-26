@@ -7,6 +7,9 @@
 # Slides builder — local build toolchain, not shipped with the site
 slides-builder/
 
+# Solved lab notebooks (instructor-only)
+**/solved-labs/
+
 # OS
 .DS_Store
 Thumbs.db
