@@ -501,6 +501,17 @@ h6 {
   transition: 0.3s;
 }
 
+.icon-box h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.icon-box:hover {
+  cursor: pointer;
+}
+
 .icon-box:hover h3 a {
   color: var(--primary-navy);
 }
