@@ -1,15 +1,42 @@
-# Cursor IDE config and skills
-.cursor/
+# OS
+.DS_Store
+Thumbs.db
+__MACOSX/
 
-#Obsidian vault
+# IDE / editor config
+.cursor/
 .obsidian/
+.claude/ 
 
 # Slides builder — local build toolchain, not shipped with the site
 slides-builder/
 
 # Solved lab notebooks (instructor-only)
+**/solved/
 **/solved-labs/
 
-# OS
-.DS_Store
-Thumbs.db
+# Exams and assessment drafts
+exam.tex
+exam2.tex
+exam2.log
+ML_Foundations_Exam.docx
+
+# Loose files not used by website
+head.png
+qr-code.jpg
+syllabus_schedule.csv
+SimCLR.ipynb
+
+# External / reference material folders
+KAUST-Labs/
+Olympiad-Problems/
+
+# Archived / discarded competition drafts
+_archive/
+
+# Competition datasets (too large for git)
+**/competition_data/
+
+# Lab datasets
+week1/data/
+__pycache__/

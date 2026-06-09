@@ -1,0 +1,1 @@
+Train/test split CSVs for the Arabic Medical Question Classification competition. 8 medical specialties, ~7,400 train / ~1,800 test questions. Use `label_map.csv` to map integer labels to Arabic specialty names.

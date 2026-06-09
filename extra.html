@@ -4,27 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Extra Resources - IOAI Training</title>
+  <title>Competitions - IOAI Training</title>
 
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <style>
-    html,
-    body {
-      height: 100%;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    main {
-      flex: 1;
-    }
+    html, body { height: 100%; }
+    body { display: flex; flex-direction: column; min-height: 100vh; }
+    main { flex: 1; }
   </style>
 </head>
 
@@ -44,7 +34,7 @@
           <li><a href="week2/">Week 2</a></li>
           <li><a href="week3/">Week 3</a></li>
           <li><a href="week4/">Week 4</a></li>
-          <li><a class="active" href="extra.html">Extra</a></li>
+          <li><a class="active" href="extra.html">Competitions</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -54,14 +44,15 @@
   <main id="main">
     <div class="breadcrumbs animate-up">
       <div class="container">
-        <h2>Extra Resources</h2>
-        <p>Additional materials and references to supplement your learning.</p>
+        <h2>Competitions</h2>
+        <p>Kaggle challenges to test your skills across ML, CV, NLP, and Multimodal AI.</p>
       </div>
     </div>
 
+    <!-- Competition 1: ML Foundations -->
     <div class="container mb-5 animate-up delay-100">
       <div class="section-title mb-4">
-        <h3>Competition 1 &mdash; ML Challenge</h3>
+        <h3><i class="ri-trophy-line" style="color: var(--accent-teal-primary); margin-right: 8px;"></i>ML Foundations &mdash; Churn Classification</h3>
       </div>
 
       <div class="table-container">
@@ -76,27 +67,28 @@
           <tbody>
             <tr>
               <td><strong><i class="ri-trophy-line" style="color: var(--accent-teal-primary); margin-right: 6px;"></i>Kaggle</strong></td>
-              <td>ML Challenge &mdash; submit your predictions and compete on the leaderboard</td>
+              <td>ML Challenge &mdash; predict customer churn, scored by custom metric</td>
               <td class="text-center"><a href="https://www.kaggle.com/t/44e3b5cbaff648aa9c94a4dcf92c175b" target="_blank" class="table-btn">Join</a></td>
             </tr>
             <tr>
               <td><strong><i class="ri-slideshow-3-line" style="color: var(--accent-teal-primary); margin-right: 6px;"></i>Slides</strong></td>
-              <td>ML Challenge: Know Your Data &mdash; overview of the two datasets, features, key stats, scoring formula, and submission format</td>
-              <td class="text-center"><a href="competition/slides/Competition_Data_Overview.pdf" target="_blank" class="table-btn">Open</a></td>
+              <td>Competition overview &mdash; datasets, features, scoring formula, submission format</td>
+              <td class="text-center"><a href="competitions/ml_foundations/slides/Competition_Data_Overview.pdf" target="_blank" class="table-btn">Open</a></td>
             </tr>
             <tr>
               <td><strong><i class="ri-flask-line" style="color: var(--accent-teal-primary); margin-right: 6px;"></i>Notebook</strong></td>
               <td>Competition starter notebook (Google Colab)</td>
-              <td class="text-center"><a href="https://colab.research.google.com/github/SattamAltwaim/KAUST-Mawhiba-IOAI-2026/blob/main/competition/comp_notebook.ipynb" target="_blank" class="table-btn">Open in Colab</a></td>
+              <td class="text-center"><a href="https://colab.research.google.com/github/SattamAltwaim/KAUST-Mawhiba-IOAI-2026/blob/main/competitions/ml_foundations/comp_notebook.ipynb" target="_blank" class="table-btn">Open in Colab</a></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
 
+    <!-- Competition 2: CV & Finetuning -->
     <div class="container mb-5 animate-up delay-100">
       <div class="section-title mb-4">
-        <h3>Competition 2 &mdash; Butterfly Classification</h3>
+        <h3><i class="ri-trophy-line" style="color: var(--accent-teal-primary); margin-right: 8px;"></i>CV &amp; Finetuning &mdash; Butterfly &amp; Moth Classification</h3>
       </div>
 
       <div class="table-container">
@@ -111,13 +103,137 @@
           <tbody>
             <tr>
               <td><strong><i class="ri-trophy-line" style="color: var(--accent-teal-primary); margin-right: 6px;"></i>Kaggle</strong></td>
-              <td>Butterfly &amp; Moth Classification &mdash; 100 species, pretrained models, scored by Macro F1</td>
-              <td class="text-center"><a href="https://www.kaggle.com/t/41199ce08b5e47c896df8b6ac37760de" target="_blank" class="table-btn">Join</a></td>
+              <td>100-species classification &mdash; pretrained models allowed, scored by Macro F1</td>
+              <td class="text-center"><a href="https://www.kaggle.com/competitions/kaust-ioai-comp-2" target="_blank" class="table-btn">Join</a></td>
             </tr>
             <tr>
               <td><strong><i class="ri-flask-line" style="color: var(--accent-teal-primary); margin-right: 6px;"></i>Notebook</strong></td>
-              <td>Baseline notebook &mdash; EfficientNet-B0, light augmentation, no CV, no LR schedule (Google Colab)</td>
-              <td class="text-center"><a href="https://colab.research.google.com/github/SattamAltwaim/KAUST-Mawhiba-IOAI-2026/blob/main/butterfly_competition/baseline_notebook.ipynb" target="_blank" class="table-btn">Open in Colab</a></td>
+              <td>Baseline notebook &mdash; EfficientNet-B0 starter (Google Colab)</td>
+              <td class="text-center"><a href="https://colab.research.google.com/github/SattamAltwaim/KAUST-Mawhiba-IOAI-2026/blob/main/competitions/cv_butterflies/baseline_notebook.ipynb" target="_blank" class="table-btn">Open in Colab</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Competition 3: NLP -->
+    <div class="container mb-5 animate-up delay-100">
+      <div class="section-title mb-4">
+        <h3><i class="ri-trophy-line" style="color: var(--accent-teal-primary); margin-right: 8px;"></i>NLP &mdash; Medical Question Classification</h3>
+      </div>
+
+      <div class="table-container">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 20%">Type</th>
+              <th scope="col">Description</th>
+              <th scope="col" style="width: 18%; text-align: center;">Resource</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong><i class="ri-trophy-line" style="color: var(--accent-teal-primary); margin-right: 6px;"></i>Kaggle</strong></td>
+              <td>Classify medical questions by category</td>
+              <td class="text-center"><a href="https://www.kaggle.com/competitions/kaust-academy-ioai-comp-3" target="_blank" class="table-btn">Join</a></td>
+            </tr>
+            <tr>
+              <td><strong><i class="ri-flask-line" style="color: var(--accent-teal-primary); margin-right: 6px;"></i>Notebook</strong></td>
+              <td>Baseline notebook (Google Colab)</td>
+              <td class="text-center"><a href="https://colab.research.google.com/github/SattamAltwaim/KAUST-Mawhiba-IOAI-2026/blob/main/competitions/nlp_medical/baseline_notebook.ipynb" target="_blank" class="table-btn">Open in Colab</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Competition 4: Multimodal & GenAI -->
+    <div class="container mb-5 animate-up delay-100">
+      <div class="section-title mb-4">
+        <h3><i class="ri-trophy-line" style="color: var(--accent-teal-primary); margin-right: 8px;"></i>Multimodality &amp; GenAI &mdash; Zebra-Giraffe Image Generation</h3>
+      </div>
+
+      <div class="table-container">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 20%">Type</th>
+              <th scope="col">Description</th>
+              <th scope="col" style="width: 18%; text-align: center;">Resource</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong><i class="ri-trophy-line" style="color: var(--accent-teal-primary); margin-right: 6px;"></i>Kaggle</strong></td>
+              <td>Swap zebras and giraffes via Stable Diffusion, evaluated by CLIP similarity</td>
+              <td class="text-center"><a href="https://www.kaggle.com/competitions/kaust-ioai-comp-4" target="_blank" class="table-btn">Join</a></td>
+            </tr>
+            <tr>
+              <td><strong><i class="ri-flask-line" style="color: var(--accent-teal-primary); margin-right: 6px;"></i>Notebook</strong></td>
+              <td>Competition starter notebook (Google Colab)</td>
+              <td class="text-center"><a href="https://colab.research.google.com/github/SattamAltwaim/KAUST-Mawhiba-IOAI-2026/blob/main/competitions/multimodal_genai/comp_notebook.ipynb" target="_blank" class="table-btn">Open in Colab</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Competition 5: IOAI Challenge — CV -->
+    <div class="container mb-5 animate-up delay-100">
+      <div class="section-title mb-4">
+        <h3><i class="ri-trophy-line" style="color: var(--accent-teal-primary); margin-right: 8px;"></i>IOAI Challenge &mdash; CV: Image Segmentation with CLIP</h3>
+      </div>
+
+      <div class="table-container">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 20%">Type</th>
+              <th scope="col">Description</th>
+              <th scope="col" style="width: 18%; text-align: center;">Resource</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong><i class="ri-trophy-line" style="color: var(--accent-teal-primary); margin-right: 6px;"></i>Kaggle</strong></td>
+              <td>Cats &amp; dogs image segmentation using CLIP only</td>
+              <td class="text-center"><a href="https://www.kaggle.com/competitions/kaust-ioai-computer-vision-cuties" target="_blank" class="table-btn">Join</a></td>
+            </tr>
+            <tr>
+              <td><strong><i class="ri-flask-line" style="color: var(--accent-teal-primary); margin-right: 6px;"></i>Notebook</strong></td>
+              <td>Baseline notebook (Google Colab)</td>
+              <td class="text-center"><a href="https://colab.research.google.com/github/SattamAltwaim/KAUST-Mawhiba-IOAI-2026/blob/main/competitions/ioai_cv_segmentation/baseline_notebook.ipynb" target="_blank" class="table-btn">Open in Colab</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Competition 6: IOAI Challenge — NLP -->
+    <div class="container mb-5 animate-up delay-100">
+      <div class="section-title mb-4">
+        <h3><i class="ri-trophy-line" style="color: var(--accent-teal-primary); margin-right: 8px;"></i>IOAI Challenge &mdash; NLP: Alchemist Codex</h3>
+      </div>
+
+      <div class="table-container">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 20%">Type</th>
+              <th scope="col">Description</th>
+              <th scope="col" style="width: 18%; text-align: center;">Resource</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong><i class="ri-trophy-line" style="color: var(--accent-teal-primary); margin-right: 6px;"></i>Kaggle</strong></td>
+              <td>Predict element combinations using BERT only</td>
+              <td class="text-center"><a href="https://www.kaggle.com/competitions/kaust-ioai-natural-language-processing-book-of-jaber" target="_blank" class="table-btn">Join</a></td>
+            </tr>
+            <tr>
+              <td><strong><i class="ri-flask-line" style="color: var(--accent-teal-primary); margin-right: 6px;"></i>Notebook</strong></td>
+              <td>Baseline notebook (Google Colab)</td>
+              <td class="text-center"><a href="https://colab.research.google.com/github/SattamAltwaim/KAUST-Mawhiba-IOAI-2026/blob/main/competitions/ioai_nlp_alchemy/baseline_notebook.ipynb" target="_blank" class="table-btn">Open in Colab</a></td>
             </tr>
           </tbody>
         </table>
@@ -147,30 +263,16 @@
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script>AOS.init();</script>
   <script>
     AOS.init();
-
-    // Header scroll shadow
     window.addEventListener('scroll', function () {
       const header = document.getElementById('header');
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
+      header.classList.toggle('scrolled', window.scrollY > 50);
     });
-
-    /**
-     * Mobile nav toggle
-     */
-    const on = (type, el, listener, all = false) => {
+    const on = (type, el, listener) => {
       let selectEl = document.querySelector(el);
-      if (selectEl) {
-        selectEl.addEventListener(type, listener);
-      }
+      if (selectEl) selectEl.addEventListener(type, listener);
     }
-
     on('click', '.mobile-nav-toggle', function (e) {
       document.querySelector('#navbar').classList.toggle('navbar-mobile')
       this.classList.toggle('bi-list')

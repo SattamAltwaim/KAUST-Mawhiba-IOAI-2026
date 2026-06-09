@@ -1,0 +1,1 @@
+Train/test split CSVs for the Butterfly & Moth Classification competition. 100 species, 10,875 train / 2,719 test images. Images are in the [Butterfly & Moths dataset](https://www.kaggle.com/datasets/gpiosenka/butterfly-images40-species) — use `filepath` column to load them.
