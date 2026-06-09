@@ -160,6 +160,16 @@
       this.classList.toggle('bi-list')
       this.classList.toggle('bi-x')
     })
+
+    document.querySelectorAll(".icon-box").forEach(function(box) {
+      var link = box.querySelector("h3 a");
+      if (link) {
+        box.style.cursor = "pointer";
+        box.addEventListener("click", function(e) {
+          if (!e.target.closest("a")) link.click();
+        });
+      }
+    })
   </script>
 
 </body>
