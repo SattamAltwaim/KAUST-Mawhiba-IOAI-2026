@@ -34,7 +34,8 @@ Olympiad-Problems/
 # Archived / discarded competition drafts
 _archive/
 
-# Competition datasets (too large for git)
+# Competition data prep scripts and datasets
+**/prepare_data.py
 **/competition_data/
 
 # Lab datasets
